@@ -1,6 +1,15 @@
-// Main App UI
 import React from 'react';
+import BookList from './components/BookList';
+import { LanguageProvider } from './context/LanguageContext';
+
 function App() {
-  return <div className="p-4 text-xl">AloLekho.com is Loading...</div>;
+  return (
+    <LanguageProvider>
+      <div className="min-h-screen bg-gray-100 p-4">
+        <BookList />
+      </div>
+    </LanguageProvider>
+  );
 }
+
 export default App;
