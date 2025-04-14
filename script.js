@@ -1,1 +1,0 @@
-// Alolekha JavaScript will go here
